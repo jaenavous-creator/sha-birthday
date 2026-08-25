@@ -1,0 +1,444 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background: #f1eef5;
+    color: #34345f;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* ==========================================
+   PAGE
+========================================== */
+
+.page {
+    min-height: 100vh;
+    padding: 35px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+
+/* ==========================================
+   CARD
+========================================== */
+
+.card {
+    width: 100%;
+    background: #fffdfd;
+    border-radius: 30px;
+    padding: 52px 58px;
+    box-shadow: 0 20px 50px rgba(52, 52, 95, 0.12);
+}
+
+.card.center {
+    text-align: center;
+}
+
+
+/* ==========================================
+   TEXT
+========================================== */
+
+.subtitle {
+    margin-bottom: 14px;
+    color: #77779a;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.title {
+    margin-bottom: 18px;
+    color: #34345f;
+    font-size: 48px;
+    line-height: 1.15;
+    font-weight: 700;
+}
+
+.text {
+    max-width: 650px;
+    margin: 0 auto 28px;
+    color: #34345f;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.text.center {
+    text-align: center;
+}
+
+.small-title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #34345f;
+    font-size: 23px;
+    line-height: 1.3;
+    text-align: center;
+    font-weight: 600;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/* ==========================================
+   ENVELOPE - HALAMAN DEPAN
+========================================== */
+
+.envelope-box {
+    width: 100%;
+    margin: 38px auto 10px;
+    text-align: center;
+}
+
+.envelope-image {
+    width: 240px;
+    height: 240px;
+    margin: 0 auto;
+
+    display: block;
+
+    object-fit: contain;
+
+    border-radius: 20px;
+}
+
+.envelope-text {
+    margin-top: 16px;
+    color: #77779a;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 34px;
+
+    border-radius: 30px;
+
+    background: #34345f;
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(52, 52, 95, 0.2);
+}
+
+
+/* ==========================================
+   MEMORIES - SHA
+========================================== */
+
+.photo-grid {
+    width: 100%;
+    margin-top: 28px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.photo-card {
+    width: 100%;
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background: #f7f3e9;
+}
+
+.photo-card img {
+    width: 100%;
+    height: 270px;
+
+    display: block;
+
+    object-fit: contain;
+
+    background: #f7f3e9;
+
+    border-radius: 20px;
+}
+
+
+/* ==========================================
+   FAVORITE PEOPLE
+========================================== */
+
+.people {
+    width: 100%;
+    margin-top: 25px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.person {
+    width: 100%;
+    text-align: center;
+}
+
+.person img {
+    width: 100%;
+    height: 260px;
+
+    display: block;
+
+    object-fit: contain;
+
+    background: #f7f3e9;
+
+    border-radius: 20px;
+}
+
+.person-name {
+    margin-top: 11px;
+
+    color: #34345f;
+
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+
+/* ==========================================
+   BLOOD SAGA
+========================================== */
+
+.feature-card {
+    width: 100%;
+    margin-top: 25px;
+
+    overflow: hidden;
+
+    border-radius: 22px;
+
+    background: #f7f3e9;
+}
+
+.feature-image {
+    width: 100%;
+    max-height: 550px;
+
+    display: block;
+
+    object-fit: contain;
+
+    background: #f7f3e9;
+
+    border-radius: 22px;
+}
+
+
+/* ==========================================
+   IMAGES
+========================================== */
+
+img {
+    max-width: 100%;
+}
+
+
+/* ==========================================
+   MESSAGE
+========================================== */
+
+.message {
+    color: #34345f;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.message p {
+    margin-bottom: 20px;
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 700px) {
+
+    .page {
+        min-height: 100vh;
+        padding: 20px 12px;
+        align-items: flex-start;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .card {
+        padding: 35px 22px;
+        border-radius: 24px;
+    }
+
+    .subtitle {
+        font-size: 11px;
+        letter-spacing: 2.5px;
+    }
+
+    .title {
+        font-size: 34px;
+        line-height: 1.15;
+    }
+
+    .text {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .small-title {
+        font-size: 21px;
+    }
+
+
+    /* ENVELOPE */
+
+    .envelope-image {
+        width: 220px;
+        height: 220px;
+    }
+
+
+    /* SHA */
+
+    .photo-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .photo-card img {
+        width: 100%;
+        height: auto;
+        min-height: 250px;
+        max-height: 450px;
+
+        object-fit: contain;
+    }
+
+
+    /* PEOPLE */
+
+    .people {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .person img {
+        width: 100%;
+        height: 190px;
+
+        object-fit: contain;
+    }
+
+    .person-name {
+        font-size: 13px;
+    }
+
+
+    /* BLOOD SAGA */
+
+    .feature-image {
+        width: 100%;
+        height: auto;
+        max-height: 500px;
+
+        object-fit: contain;
+    }
+
+
+    /* BUTTON */
+
+    .button {
+        padding: 13px 29px;
+        font-size: 14px;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL PHONE
+========================================== */
+
+@media (max-width: 400px) {
+
+    .page {
+        padding: 15px 9px;
+    }
+
+    .card {
+        padding: 28px 16px;
+        border-radius: 20px;
+    }
+
+    .title {
+        font-size: 29px;
+    }
+
+    .subtitle {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .envelope-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .photo-card img {
+        min-height: 220px;
+        max-height: 400px;
+    }
+
+    .person img {
+        height: 165px;
+    }
+
+    .button {
+        padding: 12px 26px;
+    }
+
+}

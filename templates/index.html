@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>for sha</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+
+<body>
+
+<div class="page">
+
+    <div class="container">
+
+        <div class="card center">
+
+            <p class="subtitle">
+                august 25, 2004
+            </p>
+
+            <h1 class="title">
+                happy birthday, sha
+            </h1>
+
+            <p class="text">
+                a little something made just for you.
+            </p>
+
+
+            <!-- ENVELOPE -->
+
+            <div class="envelope-box">
+
+                <img
+                    src="{{ url_for('static', filename='images/envelope.jpg') }}"
+                    alt="a little note for sha"
+                    class="envelope-image"
+                >
+
+                <p class="envelope-text">
+                    a little note for you.
+                </p>
+
+            </div>
+
+
+            <!-- CONTINUE -->
+
+            <a
+                href="{{ url_for('memories') }}"
+                class="button"
+            >
+                continue
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
